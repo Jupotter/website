@@ -1,0 +1,55 @@
+
+<!doctype html>
+<html>
+    <Head>
+         <!--(bake includes/library.html)-->
+
+        <Title>Jupotter.eu - Light Out Roguelike</Title>
+    </Head>
+    <Body>
+        <!--(bake includes/navbar.html)-->
+
+        <script type="text/javascript">
+document.getElementById('navbar-projects').setAttribute('class', 'active');
+document.getElementById('navbar-projects-lightout').setAttribute('class', 'active');
+        </script>
+
+        <div class="container" role="main">
+            <div class="page-header">
+                <h1>Light's Out</h1>
+            </div>
+            <p class="lead">
+            Lights Out is a Seven Day Roguelike, where
+            the gameplay is focused on managing you light sources.
+            </p>
+
+            <p>
+            Explore the dungeon, armed only with your torches and your courage.
+            </p>
+
+            <p>
+            Enemies are attracted by light, but also injured by it. The
+            stronger it is, the more life they lose.<br>
+            Caution, your torches won't last forever. If the light goes out,
+            well, you are likely to be eaten by a grue.
+            </p>
+
+            <h4>Controls:</h4>
+            <dl class="dl-horizontal">
+                <dt>Movement</dt><dd>vi-keys, arrow key, numpad</dd>
+                <dt>Inventory</dt><dd><kbd>i</kbd></dd>
+                <dt>Drop</dt><dd><kbd>d</kbd></dd>
+                <dt>Get</dt><dd><kbd>g</kbd></dd>
+                <dt>Read</dt><dd><kbd>r</kbd></dd>
+            </dl>
+
+            <h4>Debug Commands:</h4>
+            <dl class="dl-horizontal">
+                <dt>Stop monster AI</dt><dd><kbd>a</kbd></dd>
+                <dt>Stop monster injury</dt><dd><kbd>z</kbd></dd>
+                <dt>Reveal map</dt><dd><kbd>w</kbd></dd>
+            </dl>
+
+        </div>
+    </Body>
+</html>
