@@ -18,11 +18,16 @@ module.exports = function(grunt) {
                 dest: "dist/content",
                 expand: true,
             },
-        }
+        },
+        watch: {
+            files: [ "static/**/*.{html,js}", "static/content/**/*"],
+            tasks: ['bake', 'copy'],
+        },
     } )
 
     grunt.loadNpmTasks( "grunt-bake" );
     grunt.loadNpmTasks( "grunt-copy" );
+    grunt.loadNpmTasks( "grunt-contrib-watch" );
 
     grunt.registerTask('default', ['bake', 'copy']);
 };
