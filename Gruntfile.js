@@ -21,7 +21,7 @@ module.exports = function(grunt) {
         },
         watch: {
             files: [ "static/**/*.{html,js}", "static/content/**/*"],
-            tasks: ['bake', 'copy'],
+            tasks: ['bake'],
         },
     } )
 
@@ -29,5 +29,5 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks( "grunt-copy" );
     grunt.loadNpmTasks( "grunt-contrib-watch" );
 
-    grunt.registerTask('default', ['bake', 'copy']);
+    grunt.registerTask('default', ['bake']);
 };
