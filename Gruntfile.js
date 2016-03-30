@@ -2,13 +2,18 @@ module.exports = function(grunt) {
     grunt.initConfig( {
         bake: {
             build: {
-                files: {
-                    "dist/index.html": "static/index.html",
-                    "dist/sierra.html": "static/sierra.html",
-                    "dist/zombie.html": "static/zombie.html",
-                    "dist/light-out.html": "static/light-out.html",
-                    "dist/robots.txt": "static/robots.txt",
+                options: {
+                    basePath: 'static/includes'
                 },
+                files: [ {
+                    expand: true,
+                    cwd: 'static/pages',
+                    src: ['**/*.html'],
+                    dest: 'dist/pages'
+                }, {
+                    dest: "dist/index.html",
+                    src: "static/index.html"
+                } ]
             },
         },
         copy: {
