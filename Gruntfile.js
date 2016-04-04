@@ -13,6 +13,13 @@ module.exports = function(grunt) {
                 } ]
             },
         },
+        shell: {
+            copy: {
+                command: function (folder) {
+                    return 'cp -vr '+ folder + ' dist/';
+                }
+            },
+        },
         copy: {
             main: {
                 files: [
@@ -30,6 +37,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks( "grunt-bake" );
     grunt.loadNpmTasks( "grunt-copy" );
     grunt.loadNpmTasks( "grunt-contrib-watch" );
+    grunt.loadNpmTasks( "grunt-shell" );
 
-    grunt.registerTask('default', ['bake']);
+    grunt.registerTask('default', ['shell:copy:content', 'shell:copy:octicons', 'bake']);
 };
