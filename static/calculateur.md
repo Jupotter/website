@@ -42,11 +42,14 @@ Download and screenshots
 
 All the code and releases are available on Github
 
-<a href=https://github.com/Jupotter/Terre-Natale-Calculateur/release/latest class="btn btn-success " >
-Latest release
-<span class="octicon octicon-desktop-download" aria-hidden="true"></span>
-</a>
-<a href=https://github.com/Jupotter/Terre-Natale-Calculateur class="btn btn-info " >
-View on Github
-<span class="octicon octicon-mark-github" aria-hidden="true"></span>
-</a>
+
+<div>
+    <a href="https://github.com/Jupotter/Terre-Natale-Calculateur/release/latest" class="btn btn-success" >
+        Latest release
+        <span class="octicon octicon-desktop-download" aria-hidden="true"></span>
+    </a>
+    <a href="https://github.com/Jupotter/Terre-Natale-Calculateur" class="btn btn-primary" >
+        View on Github
+        <span class="octicon octicon-mark-github" aria-hidden="true"></span>
+    </a>
+</div>
