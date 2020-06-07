@@ -2,14 +2,14 @@
   "name": "jupotter.eu",
   "version": "0.1.0",
   "devDependencies": {
-    "grunt": "^1.0.4",
+    "grunt": "^1.1.0",
     "grunt-bake": "^0.3.13",
     "grunt-contrib-jshint": "^2.1.0",
-    "grunt-contrib-nodeunit": "^2.0.0",
+    "grunt-contrib-nodeunit": "^2.1.0",
     "grunt-contrib-uglify": "^4.0.1",
     "grunt-contrib-watch": "^1.1.0",
     "grunt-copy": "^0.1.0",
-    "grunt-md2html": "^0.3.1",
+    "grunt-md2html": "^0.5.1",
     "grunt-shell": "^1.2.1"
   }
 }
